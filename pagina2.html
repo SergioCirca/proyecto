@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+    <div class="logo">
+      <i data-lucide="bed"></i> LuxeStay
+    </div>
+    <button class="close-btn"><i data-lucide="x"></i></button>
+  </header>
+
+  <div class="container">
+    <h1>Complete your booking</h1>
+
+    <div class="grid">
+      <!-- Formulario de Pago -->
+      <div class="card form-card">
+        <div class="card-header">
+          <div class="card-title">
+            <i data-lucide="credit-card"></i> Payment Method
+          </div>
+          <div class="secure-tag">
+            <i data-lucide="lock" style="width: 12px;"></i> Secure Checkout
+          </div>
+        </div>
+
+        <div class="tab-container">
+          <button class="tab active">Credit Card</button>
+          <button class="tab">PayPal</button>
+        </div>
+
+        <form>
+          <div class="form-group">
+            <label>Name on Card</label>
+            <input type="text" class="form-control" placeholder="e.g. Jane Doe">
+          </div>
+
+          <div class="form-group">
+            <label>Card Number</label>
+            <div class="input-wrapper">
+              <input type="text" class="form-control" placeholder="0000 0000 0000 0000">
+              <i data-lucide="credit-card" class="icon"></i>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label>Expiry Date</label>
+              <input type="text" class="form-control" placeholder="MM/YY">
+            </div>
+            <div class="form-group">
+              <label>CVV</label>
+              <div class="input-wrapper">
+                <input type="text" class="form-control" placeholder="123">
+                <i data-lucide="help-circle" class="icon"></i>
+              </div>
+            </div>
+          </div>
+        </form>
+
+        <div class="divider"></div>
+
+        <div class="billing-info">
+          <h4>Billing Address</h4>
+          <p>Same as guest details (Jane Doe, 123 Luxury Lane, NY 10001)</p>
+          <span class="edit-link">Edit address</span>
+        </div>
+      </div>
+
+      <!-- Resumen de la Reserva -->
+      <div class="card summary-card">
+        <div class="image-container">
+          <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=800&q=80" alt="Resort">
+          <div class="badge-pending">
+            <i data-lucide="clock" style="width: 14px;"></i> Pending Payment
+          </div>
+        </div>
+
+        <div class="summary-content">
+          <h2>The Azure Horizon Resort & Spa</h2>
+          <div class="location">
+            <i data-lucide="map-pin" style="width: 14px;"></i> Maldives, South Atoll
+          </div>
+
+          <div class="tags">
+            <span class="tag">Ocean View Villa</span>
+            <span class="tag gray">King Bed</span>
+          </div>
+
+          <div class="booking-dates">
+            <div class="date-box">
+              <div class="label">Check-in</div>
+              <div class="value">Oct 12, 2024</div>
+            </div>
+            <div class="duration">
+              <i data-lucide="home" style="width: 16px;"></i>
+              <span>3 Nights</span>
+            </div>
+            <div class="date-box">
+              <div class="label">Check-out</div>
+              <div class="value">Oct 15, 2024</div>
+            </div>
+          </div>
+
+          <div class="price-details">
+            <div class="price-row">
+              <span>$850.00 × 3 nights</span>
+              <span>$2,550.00</span>
+            </div>
+            <div class="price-row">
+              <span>Taxes & Service Fees</span>
+              <span>$382.50</span>
+            </div>
+          </div>
+
+          <div class="total-row">
+            <span>Total Price</span>
+            <span class="price">$2,932.50</span>
+          </div>
+
+          <button class="btn-submit">
+            <i data-lucide="check-circle-2"></i> Complete Booking
+          </button>
+
+          <p class="terms">
+            By completing this booking, you agree to our <a href="#">Terms of Service</a>.
+          </p>
+
+          <div class="cancellation">
+            <i data-lucide="shield-check" style="width: 14px;"></i> Free cancellation until Oct 10, 2024
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
